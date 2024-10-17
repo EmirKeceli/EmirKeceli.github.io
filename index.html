@@ -142,7 +142,7 @@
             top: 6px;
             height: calc(100% - 12px);
             width: 2px;
-            background-color: #ecf0f1;
+            background-color: #8e44ad; /* Purple line */
         }
         
         .timeline-item {
@@ -158,9 +158,28 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #ecf0f1;
+            background-color: #8e44ad; /* Purple dot */
         }
         
+        /* Specific color changes for "Hakkımda" and "İş Deneyimi" */
+        .about-section h2,
+        .experience-section h2,
+        .education-section h2,
+        .language-section h2,
+        .interests-section h2,
+        .skills-section h2 {
+            color: #8e44ad; /* Purple */
+        }
+
+        .about-section h2::after,
+        .experience-section h2::after,
+        .education-section h2::after,
+        .language-section h2::after,
+        .interests-section h2::after,
+        .skills-section h2::after {
+            background-color: #8e44ad; /* Purple */
+        }
+
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -192,13 +211,13 @@
         
         <div class="main-content">
             <div class="left-column">
-                <section>
+                <section class="about-section">
                     <h2>HAKKIMDA</h2>
                     <p>Ben Emir Keçeli, 19 yaşında bir üniversite öğrencisiyim. Liseden beri bilgisayar dünyasıyla ilgileniyorum. Lisedeki grafik tasarım ve web eğitimlerim sayesinde Photoshop, After Effects ve frontend development konularında kendimi geliştirdim. Ayrıca, son çalıştığım yerde IT destek, ağ ve mail yönetimi alanlarında deneyim kazandım. Üniversitedeki bölümüm gereği siber güvenlik alanında da uzmanlaşmaktayım.
                       </p>
                 </section>
                 
-                <section>
+                <section class="skills-section">
                     <h2>BECERİ VE YETKİNLİKLER</h2>
                     <div class="skill-container">
                         <span class="skill-item">Photoshop</span>
@@ -213,7 +232,7 @@
                     </div>
                 </section>
                 
-                <section>
+                <section class="language-section">
                     <h2>DİLLER</h2>
                     <ul>
                         <li>Türkçe - Ana Dili</li>
@@ -221,7 +240,7 @@
                     </ul>
                 </section>
                 
-                <section>
+                <section class="interests-section">
                     <h2>İLGİ ALANLARI</h2>
                     <ul>
                         <li>Teknoloji Trendleri</li>
@@ -235,7 +254,7 @@
             </div>
             
             <div class="right-column">
-                <section>
+                <section class="experience-section">
                     <h2>İŞ DENEYİMİ</h2>
                     <div class="timeline">
 
@@ -265,7 +284,7 @@
                     </div>
                 </section>
                 
-                <section>
+                <section class="education-section">
                     <h2>EĞİTİM</h2>
                     <div class="timeline">
                         <div class="timeline-item">
